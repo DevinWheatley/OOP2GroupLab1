@@ -57,6 +57,7 @@ namespace OOP2GroupLab1.ProblemDomain
                 }
                 /*else if (choice == 2) // Find by brand
                 {
+                    
                     // Define Brand to be searched for
                     Console.Write("Enter brand to search for : ");
                     string searchBrand = Console.ReadLine();
@@ -76,9 +77,53 @@ namespace OOP2GroupLab1.ProblemDomain
                         Console.WriteLine($"No {searchBrand} appliances found.");
                     }
                 }*/
+              
                 else if (choice == 3) // Find by type
                 {
-                    Console.WriteLine("Three");
+                    
+                    Console.WriteLine("Select Appliance Type:");
+                    Console.WriteLine("1 – Refrigerators");
+                    Console.WriteLine("2 – Vacuums");
+                    Console.WriteLine("3 – Microwaves");
+                    Console.WriteLine("4 – Dishwashers");
+                    Console.Write("Enter option: ");
+                    int typeChoice = int.Parse(Console.ReadLine());
+                    Console.WriteLine();
+
+                    string searchType = "";
+                    switch (typeChoice)
+                    {
+                        case 1:
+                            searchType = "refrigerator";
+                            break;
+                        case 2:
+                            searchType = "vacuum";
+                            break;
+                        case 3:
+                            searchType = "microwave";
+                            break;
+                        case 4:
+                            searchType = "dishwasher";
+                            break;
+                        default:
+                            Console.WriteLine("Invalid type selected.");
+                            continue;
+                    }
+
+                    //check type
+                    bool flag = false;
+                    foreach (var appliance in setType.appliances)
+                    {
+                        if (appliance.type.ToLower() == searchType) 
+                        {
+                            Console.WriteLine(appliance.ToString());
+                            flag = true;
+                        }
+                    }
+                    if (!flag)
+                    {
+                        Console.WriteLine($"No {searchType} appliances found.");
+                    }
                 }
                 else if (choice == 4) // Random
                 {
