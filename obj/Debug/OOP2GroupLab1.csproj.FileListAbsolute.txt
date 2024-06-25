@@ -1,0 +1,9 @@
+C:\Users\devin\OneDrive\Desktop\School\Semester Two\CPRG 211 - ObjOrnt 2.0\Group Lab 1\OOP2GroupLab1\obj\Debug\OOP2GroupLab1.csproj.AssemblyReference.cache
+C:\Users\devin\OneDrive\Desktop\School\Semester Two\CPRG 211 - ObjOrnt 2.0\Group Lab 1\OOP2GroupLab1\obj\Debug\OOP2GroupLab1.Properties.Resources.resources
+C:\Users\devin\OneDrive\Desktop\School\Semester Two\CPRG 211 - ObjOrnt 2.0\Group Lab 1\OOP2GroupLab1\obj\Debug\OOP2GroupLab1.csproj.GenerateResource.cache
+C:\Users\devin\OneDrive\Desktop\School\Semester Two\CPRG 211 - ObjOrnt 2.0\Group Lab 1\OOP2GroupLab1\obj\Debug\OOP2GroupLab1.csproj.CoreCompileInputs.cache
+C:\Users\devin\OneDrive\Desktop\School\Semester Two\CPRG 211 - ObjOrnt 2.0\Group Lab 1\OOP2GroupLab1\bin\Debug\OOP2GroupLab1.exe.config
+C:\Users\devin\OneDrive\Desktop\School\Semester Two\CPRG 211 - ObjOrnt 2.0\Group Lab 1\OOP2GroupLab1\bin\Debug\OOP2GroupLab1.exe
+C:\Users\devin\OneDrive\Desktop\School\Semester Two\CPRG 211 - ObjOrnt 2.0\Group Lab 1\OOP2GroupLab1\bin\Debug\OOP2GroupLab1.pdb
+C:\Users\devin\OneDrive\Desktop\School\Semester Two\CPRG 211 - ObjOrnt 2.0\Group Lab 1\OOP2GroupLab1\obj\Debug\OOP2GroupLab1.exe
+C:\Users\devin\OneDrive\Desktop\School\Semester Two\CPRG 211 - ObjOrnt 2.0\Group Lab 1\OOP2GroupLab1\obj\Debug\OOP2GroupLab1.pdb
