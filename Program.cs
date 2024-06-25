@@ -90,40 +90,40 @@ namespace OOP2GroupLab1.ProblemDomain
                     int typeChoice = int.Parse(Console.ReadLine());
                     Console.WriteLine();
 
-                    string searchType = "";
-                    switch (typeChoice)
+                    if (typeChoice == 1)
                     {
-                        case 1:
-                            searchType = "refrigerator";
-                            break;
-                        case 2:
-                            searchType = "vacuum";
-                            break;
-                        case 3:
-                            searchType = "microwave";
-                            break;
-                        case 4:
-                            searchType = "dishwasher";
-                            break;
-                        default:
-                            Console.WriteLine("Invalid type selected.");
-                            continue;
-                    }
-
-                    //check type
-                    bool flag = false;
-                    foreach (var appliance in setType.appliances)
-                    {
-                        if (appliance.type.ToLower() == searchType) 
+                        foreach (var appliance in setType.refrigerators)
                         {
                             Console.WriteLine(appliance.ToString());
-                            flag = true;
                         }
                     }
-                    if (!flag)
+                    else if (typeChoice == 2)
                     {
-                        Console.WriteLine($"No {searchType} appliances found.");
+                        foreach (var appliance in setType.vacuums)
+                        {
+                            Console.WriteLine(appliance.ToString());
+                        }
                     }
+                    else if (typeChoice == 3)
+                    {
+                        foreach (var appliance in setType.microwaves)
+                        {
+                            Console.WriteLine(appliance.ToString());
+                        }
+                    }
+                    else if (typeChoice == 4)
+                    {
+                        foreach (var appliance in setType.dishwashers)
+                        {
+                            Console.WriteLine(appliance.ToString());
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid type selected.");
+                    }
+                }
+
                 }
                 else if (choice == 4) // Random
                 {
