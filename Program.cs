@@ -55,7 +55,7 @@ namespace OOP2GroupLab1.ProblemDomain
                     // if no matching Item Number found
                     if (flag == false) { Console.WriteLine($"No item with matching Item Number.\n"); }
                 }
-                /*else if (choice == 2) // Find by brand
+                else if (choice == 2) // Find by brand
                 {
                     
                     // Define Brand to be searched for
@@ -64,11 +64,12 @@ namespace OOP2GroupLab1.ProblemDomain
 
                     // Iterate over each appliance checking for brand name
                     bool flag = false; // flag will trigger true if an appliance with a matching brand is found
-                    foreach (brand in brands)
+                    foreach (Appliance appliance in setType.appliances)
                     {
-                        if (searchBrand == brand)
+                        if (searchBrand.ToLower() == brand.ToLower())
                         {
                             // Run ToString method for appliance
+                            Console.WriteLine(appliance.ToString());
                             flag = true;
                         }
                     }
@@ -76,7 +77,7 @@ namespace OOP2GroupLab1.ProblemDomain
                     {
                         Console.WriteLine($"No {searchBrand} appliances found.");
                     }
-                }*/
+                }
               
                 else if (choice == 3) // Find by type
                 {
