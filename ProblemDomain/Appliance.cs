@@ -9,14 +9,14 @@ namespace OOP2GroupLab1.ProblemDomain
     internal abstract class Appliance
     {
         // --- Attributes --- 
-        private long _itemNumber;
+        private int _itemNumber;
         private string _brand;
         private int _quantity;
         private int _wattage;
         private float _price;
         private string _colour;
         // --- Getters & Setters --- 
-        public long itemNumber
+        public int itemNumber
         { get { return _itemNumber; } set { _itemNumber = value; } }
         public string brand
         { get { return _brand; } set { _brand = value; } }

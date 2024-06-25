@@ -47,6 +47,7 @@
     <Compile Include="ProblemDomain\Dishwasher.cs" />
     <Compile Include="ProblemDomain\Microwave.cs" />
     <Compile Include="ProblemDomain\Refrigerator.cs" />
+    <Compile Include="ProblemDomain\SetType.cs" />
     <Compile Include="ProblemDomain\TextToList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
