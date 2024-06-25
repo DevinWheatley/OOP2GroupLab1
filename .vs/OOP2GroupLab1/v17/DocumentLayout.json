@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|c:\\users\\devin\\onedrive\\desktop\\school\\semester two\\cprg 211 - objornt 2.0\\group lab 1\\oop2grouplab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|c:\\users\\devin\\onedrive\\desktop\\school\\semester two\\cprg 211 - objornt 2.0\\group lab 1\\oop2grouplab1\\problemdomain\\settype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\problemdomain\\appliance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|solutionrelative:problemdomain\\appliance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\problemdomain\\dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|solutionrelative:problemdomain\\dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\problemdomain\\settype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|solutionrelative:problemdomain\\settype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\problemdomain\\texttolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|solutionrelative:problemdomain\\texttolist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\problemdomain\\appliance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|solutionrelative:problemdomain\\appliance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\problemdomain\\microwave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\problemdomain\\refrigerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|solutionrelative:problemdomain\\refrigerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\problemdomain\\dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|solutionrelative:problemdomain\\dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8628AA15-D305-46B0-BA3A-E5BD1D898579}|OOP2GroupLab1.csproj|C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\problemdomain\\vacuum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAAkAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwDUAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T16:03:27.289Z",
               "IsPinned": true,
@@ -60,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SetType.cs",
               "DocumentMoniker": "C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\ProblemDomain\\SetType.cs",
               "RelativeDocumentMoniker": "ProblemDomain\\SetType.cs",
@@ -68,18 +68,17 @@
               "RelativeToolTip": "ProblemDomain\\SetType.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwB8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T16:22:46.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T16:22:46.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Appliance.cs",
               "DocumentMoniker": "C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\ProblemDomain\\Appliance.cs",
               "RelativeDocumentMoniker": "ProblemDomain\\Appliance.cs",
               "ToolTip": "C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\ProblemDomain\\Appliance.cs",
               "RelativeToolTip": "ProblemDomain\\Appliance.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAjAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T16:05:13.616Z",
               "EditorCaption": ""
@@ -94,12 +93,11 @@
               "RelativeToolTip": "ProblemDomain\\Vacuum.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T16:04:13.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T16:04:13.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Microwave.cs",
               "DocumentMoniker": "C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\ProblemDomain\\Microwave.cs",
               "RelativeDocumentMoniker": "ProblemDomain\\Microwave.cs",
@@ -107,12 +105,11 @@
               "RelativeToolTip": "ProblemDomain\\Microwave.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T16:05:03.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T16:05:03.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Refrigerator.cs",
               "DocumentMoniker": "C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\ProblemDomain\\Refrigerator.cs",
               "RelativeDocumentMoniker": "ProblemDomain\\Refrigerator.cs",
@@ -120,12 +117,11 @@
               "RelativeToolTip": "ProblemDomain\\Refrigerator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T16:04:45.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T16:04:45.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Dishwasher.cs",
               "DocumentMoniker": "C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\ProblemDomain\\Dishwasher.cs",
               "RelativeDocumentMoniker": "ProblemDomain\\Dishwasher.cs",
@@ -138,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TextToList.cs",
               "DocumentMoniker": "C:\\Users\\devin\\OneDrive\\Desktop\\School\\Semester Two\\CPRG 211 - ObjOrnt 2.0\\Group Lab 1\\OOP2GroupLab1\\ProblemDomain\\TextToList.cs",
               "RelativeDocumentMoniker": "ProblemDomain\\TextToList.cs",
@@ -146,8 +142,7 @@
               "RelativeToolTip": "ProblemDomain\\TextToList.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T16:04:55.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T16:04:55.68Z"
             }
           ]
         }

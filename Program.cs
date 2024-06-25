@@ -46,9 +46,18 @@ namespace OOP2GroupLab1.ProblemDomain
                         // Check searchNumber against appliance Item Numbers
                         if (searchNumber == setType.appliances[index].itemNumber)
                         {
-                            Console.WriteLine($"Appliance \"{searchNumber}\" has been checked out.\n");
-                            // Update quantity
-                            setType.appliances[index].quantity--;
+                            // Checks that item is available
+                            if (setType.appliances[index].IsAvailable())
+                            {
+                                Console.WriteLine($"Appliance \"{searchNumber}\" has been checked out.\n");
+                                // Update quantity
+                                setType.appliances[index].quantity--;
+                            }
+                            else if (!setType.appliances[index].IsAvailable())
+                            {
+                                Console.WriteLine($"Appliance \"{searchNumber}\" cannot be checked out.\n");
+                            }
+                            flag = true;
                         }
                         index++;
                     }
