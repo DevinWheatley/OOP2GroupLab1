@@ -62,7 +62,7 @@ namespace OOP2GroupLab1.ProblemDomain
                         index++;
                     }
                     // if no matching Item Number found
-                    if (flag == false) { Console.WriteLine($"No item with matching Item Number.\n"); }
+                    if (flag == false) { Console.WriteLine($"No apppliances found with that Item Number.\n"); }
                 }
                 /*else if (choice == 2) // Find by brand
                 {
@@ -91,7 +91,32 @@ namespace OOP2GroupLab1.ProblemDomain
                 }
                 else if (choice == 4) // Random
                 {
-                    Console.WriteLine("Four");
+                    // List containing 
+                    List<int> randNums = new List<int>();
+
+                    // Instantiate the built in Random class
+                    Random random = new Random();
+
+                    // Define amount of appliances to be shown
+                    Console.Write("Enter number of appliances : ");
+                    int randAmount = int.Parse(Console.ReadLine());
+                    Console.Write("\nRandom Appliances :");
+
+                    while (randNums.Count < randAmount)
+                    {
+                        // Sets a random number to be indexed
+                        int randAdd = random.Next(0, setType.appliances.Count);
+                        // Checks that the index isn't already going to be displayed
+                        if (!randNums.Contains(randAdd))
+                        {
+                            randNums.Add(randAdd);
+                        }  
+                    }
+
+                    foreach (int num in randNums)
+                    {
+                        Console.WriteLine(setType.appliances[num].ToString());
+                    }
                 }
                 else if (choice == 5) // Save & Exit
                 {
