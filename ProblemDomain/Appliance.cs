@@ -30,7 +30,7 @@ namespace OOP2GroupLab1.ProblemDomain
         { get { return _colour; } set { _colour = value; } }
         // --- Parameterless Constructor --- 
         protected Appliance() { }
-        protected Appliance(int itemNumber, string brand, int quantity, int wattage, float price, string colour)
+        protected Appliance(int itemNumber, string brand, int quantity, int wattage, string colour, float price)
         {
             this.itemNumber = itemNumber;
             this.brand = brand;

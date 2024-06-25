@@ -14,7 +14,7 @@ namespace OOP2GroupLab1.ProblemDomain
         public TextToList() { }
         public List<string[]> TextIterator()
         {
-            List<string[]> appliance_list = new List<string[]>();
+            List<string[]> applianceList = new List<string[]>();
 
             // Iterate over text file
             string text = Resources.appliances;
@@ -23,12 +23,12 @@ namespace OOP2GroupLab1.ProblemDomain
             foreach (string line in lines)
             {
                 string[] attributes = line.Split(';');
-                appliance_list.Add(attributes);
+                applianceList.Add(attributes);
             }
 
             // Returns = List of Strings
-            // Format = appliance_list[item in list][attribute]
-            return appliance_list;
+            // Format = applianceList[item in list][attribute]
+            return applianceList;
         }
     }
 }

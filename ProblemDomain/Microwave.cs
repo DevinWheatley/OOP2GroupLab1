@@ -18,8 +18,8 @@ namespace OOP2GroupLab1.ProblemDomain
         public char roomType
         { get { return _roomType; } set { _roomType = value; } }
         // --- Constructor --- 
-        public Microwave(int itemNumber, string brand, int quantity, int wattage, float price, string colour, float capacity, char roomType)
-            : base(itemNumber, brand, quantity, wattage, price, colour)
+        public Microwave(int itemNumber, string brand, int quantity, int wattage, string colour, float price, float capacity, char roomType)
+            : base(itemNumber, brand, quantity, wattage, colour, price)
         {
             this._capacity = capacity;
             this._roomType = roomType;

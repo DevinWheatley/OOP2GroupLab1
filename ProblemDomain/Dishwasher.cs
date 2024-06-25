@@ -18,8 +18,8 @@ namespace OOP2GroupLab1.ProblemDomain
         public string soundRating
         { get { return _soundRating; } set { _soundRating = value; } }
         // --- Constructor --- 
-        public Dishwasher(int itemNumber, string brand, int quantity, int wattage, float price, string colour, string feature, string soundRating)
-            : base(itemNumber, brand, quantity, wattage, price, colour)
+        public Dishwasher(int itemNumber, string brand, int quantity, int wattage, string colour, float price, string feature, string soundRating)
+            : base(itemNumber, brand, quantity, wattage, colour, price)
         {
             this._feature = feature;
             this._soundRating = soundRating;

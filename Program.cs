@@ -12,33 +12,14 @@ namespace OOP2GroupLab1.ProblemDomain
     {
         static void Main(string[] args)
         {
+            // Store appliances into lists based on their ID#
+            SetType setType = new SetType();
+            setType.SetApplianceType();
 
 
-
-            TextToList textToList = new TextToList();
-            Console.WriteLine(textToList.TextIterator()[0][0]);
-
-            Vacuum vacuum = new Vacuum(123123, "Miele", 20, 120, 139.99f, "Black", 24, "Residential");
-            Console.WriteLine(vacuum.ToString());
-            vacuum.IsAvailable();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            /*while (true)
+            while (true)
             {
-                // Start
+                // Print Menu
                 Console.Write(
                     "Welcome to Modern Appliances\n" +
                     "How may we assist you?\n" +
@@ -50,26 +31,31 @@ namespace OOP2GroupLab1.ProblemDomain
                     "Enter Option : ");
                 int choice = int.Parse(Console.ReadLine());
                 Console.WriteLine();
+
+                // Menu Selections
                 if (choice == 1) // Checkout
                 {
                     // Define Item Number to checkout
                     Console.Write("Enter the Item Number of an appliance : ");
                     int searchNumber = int.Parse(Console.ReadLine());
 
-
-                    // If Match Continue - If !Match Reset
-                    *//*if (searchNumber in idNumbers)
+                    bool flag = false; // true if Item Number found
+                    int index = 0;
+                    foreach (Appliance appliance in setType.appliances)
                     {
-                        Console.Write($"Appliance \"{searchNumber}\" has been checked out.");
-                        // update quantity
+                        // Check searchNumber against appliance Item Numbers
+                        if (searchNumber == setType.appliances[index].itemNumber)
+                        {
+                            Console.WriteLine($"Appliance \"{searchNumber}\" has been checked out.\n");
+                            // Update quantity
+                            setType.appliances[index].quantity--;
+                        }
+                        index++;
                     }
-                    else
-                    {
-                        Console.Write($"The appliance is not available to be checked out.");
-                    }*//*
-                    
+                    // if no matching Item Number found
+                    if (flag == false) { Console.WriteLine($"No item with matching Item Number.\n"); }
                 }
-                else if (choice == 2) // Find by brand
+                /*else if (choice == 2) // Find by brand
                 {
                     // Define Brand to be searched for
                     Console.Write("Enter brand to search for : ");
@@ -77,19 +63,19 @@ namespace OOP2GroupLab1.ProblemDomain
 
                     // Iterate over each appliance checking for brand name
                     bool flag = false; // flag will trigger true if an appliance with a matching brand is found
-                    *//*foreach (brand in brands)
+                    foreach (brand in brands)
                     {
                         if (searchBrand == brand)
                         {
                             // Run ToString method for appliance
                             flag = true;
                         }
-                    }*//*
+                    }
                     if (flag == false) // if no appliances found with matching brand
                     {
                         Console.WriteLine($"No {searchBrand} appliances found.");
                     }
-                }
+                }*/
                 else if (choice == 3) // Find by type
                 {
                     Console.WriteLine("Three");
@@ -106,7 +92,7 @@ namespace OOP2GroupLab1.ProblemDomain
                 {
                     Console.WriteLine("Input Invalid. Try Again\n");
                 }
-            }*/
+            }
         }
     }
 }

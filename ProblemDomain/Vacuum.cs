@@ -18,8 +18,8 @@ namespace OOP2GroupLab1.ProblemDomain
         public string grade
         { get { return _grade; } set { _grade = value; } }
         // --- Constructor --- 
-        public Vacuum(int itemNumber, string brand, int quantity, int wattage, float price, string colour, int batteryVoltage, string grade)
-            : base(itemNumber, brand, quantity, wattage, price, colour)
+        public Vacuum(int itemNumber, string brand, int quantity, int wattage, string colour, float price, string grade, int batteryVoltage)
+            : base(itemNumber, brand, quantity, wattage, colour, price)
         {
             this._batteryVoltage = batteryVoltage;
             this._grade = grade;
@@ -29,8 +29,8 @@ namespace OOP2GroupLab1.ProblemDomain
         public override string ToString()
         {
             return base.ToString() +
-                $"Battery Voltage : {batteryVoltage}V\n" +
-                $"Grade : {grade}\n";
+                $"Grade : {grade}\n" +
+                $"Battery Voltage : {batteryVoltage}V\n";
         }
     }
 }

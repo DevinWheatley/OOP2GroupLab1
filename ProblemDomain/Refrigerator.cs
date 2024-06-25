@@ -21,8 +21,8 @@ namespace OOP2GroupLab1.ProblemDomain
         public int width
         { get { return _width; } set { _width = value; } }
         // --- Constructor --- 
-        public Refrigerator(int itemNumber, string brand, int quantity, int wattage, float price, string colour, int doors, int height, int width)
-            : base(itemNumber, brand, quantity, wattage, price, colour)
+        public Refrigerator(int itemNumber, string brand, int quantity, int wattage, string colour, float price, int doors, int height, int width)
+            : base(itemNumber, brand, quantity, wattage, colour, price)
         {
             this._doors = doors;
             this._height = height;
