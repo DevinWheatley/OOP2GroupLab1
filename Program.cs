@@ -40,20 +40,30 @@ namespace OOP2GroupLab1.ProblemDomain
                     int searchNumber = int.Parse(Console.ReadLine());
 
                     bool flag = false; // true if Item Number found
+                    
                     int index = 0;
                     foreach (Appliance appliance in setType.appliances)
                     {
                         // Check searchNumber against appliance Item Numbers
-                        if (searchNumber == setType.appliances[index].itemNumber)
+                        if (searchNumber == setType.appliances[index].itemNumber && setType.appliances[index].quantity > 0)
                         {
-                            Console.WriteLine($"Appliance \"{searchNumber}\" has been checked out.\n");
+                            Console.WriteLine($"\nAppliance \"{searchNumber}\" has been checked out.\n");
                             // Update quantity
                             setType.appliances[index].quantity--;
+                            Console.WriteLine(setType.appliances[index].quantity);
+                            flag = true;
+                        }
+                        else if (searchNumber == setType.appliances[index].itemNumber && setType.appliances[index].quantity <= 0)
+                        {
+                            Console.WriteLine("\nThe appliance is not available to be checked out.\n");
+                            flag = true;
                         }
                         index++;
                     }
+                    
                     // if no matching Item Number found
-                    if (flag == false) { Console.WriteLine($"No item with matching Item Number.\n"); }
+                    if (flag == false) 
+                    { Console.WriteLine($"\nNo appliances found with that item number.\n"); }
                 }
                 /*else if (choice == 2) // Find by brand
                 {

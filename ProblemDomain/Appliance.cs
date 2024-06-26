@@ -69,9 +69,7 @@ namespace OOP2GroupLab1.ProblemDomain
 
         // Checkout
         public void Checkout()
-        {
-
-        }
+        { }
 
         // FormatForFile
         public string FormatForFile()
