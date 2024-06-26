@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModernAppliance.cs" />
     <Compile Include="ProblemDomain\Appliance.cs" />
     <Compile Include="ProblemDomain\Dishwasher.cs" />
     <Compile Include="ProblemDomain\Microwave.cs" />
