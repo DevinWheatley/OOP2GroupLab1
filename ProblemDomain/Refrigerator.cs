@@ -32,10 +32,34 @@ namespace OOP2GroupLab1.ProblemDomain
         // ToString 
         public override string ToString()
         {
-            return base.ToString() +
-                $"Doors : {doors}\n" +
-                $"Height : {height}\n" +
-                $"Width : {width}\n";
+            if (this._doors == 2)
+            {
+                return base.ToString() +
+                    $"Doors : TYwo Doors\n" +
+                    $"Height : {height}\n" +
+                    $"Width : {width}\n";
+            }
+            else if (this._doors == 3)
+            {
+                return base.ToString() +
+                    $"Doors : Three Doors\n" +
+                    $"Height : {height}\n" +
+                    $"Width : {width}\n";
+            }
+            else if (this._doors == 4)
+            {
+                return base.ToString() +
+                    $"Doors : Four Doors\n" +
+                    $"Height : {height}\n" +
+                    $"Width : {width}\n";
+            }
+            else
+            {
+                return base.ToString() +
+                    $"Doors : {doors}\n" +
+                    $"Height : {height}\n" +
+                    $"Width : {width}\n";
+            }
         }
     }
 }

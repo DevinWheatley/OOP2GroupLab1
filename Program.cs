@@ -44,54 +44,135 @@ namespace OOP2GroupLab1.ProblemDomain
                     foreach (Appliance appliance in setType.appliances)
                     {
                         // Check searchNumber against appliance Item Numbers
-                        if (searchNumber == setType.appliances[index].itemNumber)
+                        if (searchNumber == setType.appliances[index].itemNumber && setType.appliances[index].quantity > 0)
                         {
-                            // Checks that item is available
-                            if (setType.appliances[index].IsAvailable())
-                            {
-                                Console.WriteLine($"Appliance \"{searchNumber}\" has been checked out.\n");
-                                // Update quantity
-                                setType.appliances[index].quantity--;
-                            }
-                            else if (!setType.appliances[index].IsAvailable())
-                            {
-                                Console.WriteLine($"Appliance \"{searchNumber}\" cannot be checked out.\n");
-                            }
+                            Console.WriteLine($"\nAppliance \"{searchNumber}\" has been checked out.\n");
+                            // Update quantity
+                            setType.appliances[index].quantity--;
+                            flag = true;
+                        }
+                        else if (searchNumber == setType.appliances[index].itemNumber && setType.appliances[index].quantity <= 0)
+                        {
+                            Console.WriteLine("\nThe appliance is not available to be checked out.\n");
                             flag = true;
                         }
                         index++;
                     }
+
                     // if no matching Item Number found
-                    if (flag == false) { Console.WriteLine($"No apppliances found with that Item Number.\n"); }
+                    if (flag == false)
+                    { Console.WriteLine($"\nNo appliances found with that item number.\n"); }
                 }
-                /*else if (choice == 2) // Find by brand
+
+                else if (choice == 2) // Find by brand
                 {
                     // Define Brand to be searched for
                     Console.Write("Enter brand to search for : ");
                     string searchBrand = Console.ReadLine();
+                    Console.WriteLine();
 
                     // Iterate over each appliance checking for brand name
-                    bool flag = false; // flag will trigger true if an appliance with a matching brand is found
-                    foreach (brand in brands)
+                    bool flag = false; // true if an appliance with a matching brand is found
+                    bool flag2 = false; // will display once, only if a match is found
+                    int index = 0;
+                    foreach (Appliance appliance in setType.appliances)
                     {
-                        if (searchBrand == brand)
+                        if (searchBrand.ToLower() == setType.appliances[index].brand.ToLower())
                         {
+                            if (flag2 == false) { Console.WriteLine("Matching Appliances :\n"); }
+                            flag2 = true;
+
                             // Run ToString method for appliance
+                            Console.WriteLine(appliance.ToString());
                             flag = true;
                         }
+                        index++;
                     }
+
+
                     if (flag == false) // if no appliances found with matching brand
                     {
                         Console.WriteLine($"No {searchBrand} appliances found.");
                     }
-                }*/
+                }
+
                 else if (choice == 3) // Find by type
                 {
-                    Console.WriteLine("Three");
+                    
+                    Console.WriteLine("Select Appliance Type :");
+                    Console.WriteLine("1 – Refrigerators");
+                    Console.WriteLine("2 – Vacuums");
+                    Console.WriteLine("3 – Microwaves");
+                    Console.WriteLine("4 – Dishwashers");
+                    Console.Write("Enter type of appliance : ");
+                    int typeChoice = int.Parse(Console.ReadLine());
+                    Console.WriteLine();
+
+                    if (typeChoice == 1) // Refrigerators
+                    {
+                        Console.Write("Enter number of doors: 2 (double door), 3 (three doors) or 4 (four doors) : ");
+                        int doors = int.Parse(Console.ReadLine());
+                        Console.WriteLine("\nMatching refrigerator :");
+
+                        foreach (var appliance in setType.refrigerators)
+                        {
+                            if (doors == appliance.doors)
+                            { 
+                                Console.WriteLine(appliance.ToString());
+                            }
+                        }
+                    }
+                    else if (typeChoice == 2) // Vacuums
+                    {
+                        Console.Write("Enter battery voltage value. 18 V (low) or 24 V (high) : ");
+                        int voltage = int.Parse(Console.ReadLine());
+                        Console.WriteLine("\nMatching vacuums :");
+
+                        foreach (var appliance in setType.vacuums)
+                        {
+                            if (voltage == appliance.batteryVoltage)
+                            {
+                                Console.WriteLine(appliance.ToString());
+                            }
+                        }
+                    }
+                    else if (typeChoice == 3) // Microwaves
+                    {
+                        Console.Write("Room where the microwave will be installed: K (kitchen) or W (work site) : ");
+                        char room = char.Parse(Console.ReadLine());
+                        Console.WriteLine("\nMatching microwaves :");
+
+                        foreach (var appliance in setType.microwaves)
+                        {
+                            if (room == appliance.roomType)
+                            {
+                                Console.WriteLine(appliance.ToString());
+                            }
+                        }
+                    }
+                    else if (typeChoice == 4) // Dishwashers
+                    {
+                        Console.Write("Enter the sound rating of the dishwasher: Qt (Quietest), Qr (Quieter), Qu(Quiet) or M (Moderate) : ");
+                        string soundRating = Console.ReadLine();
+                        Console.WriteLine("\nMatching dishwashers :");
+
+                        foreach (var appliance in setType.dishwashers)
+                        {
+                            if (soundRating == appliance.soundRating)
+                            {
+                                Console.WriteLine(appliance.ToString());
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid type selected.");
+                    }
                 }
+            
                 else if (choice == 4) // Random
                 {
-                    // List containing 
+                    // List containing indexs of chosen appliances in appliances list
                     List<int> randNums = new List<int>();
 
                     // Instantiate the built in Random class
@@ -106,22 +187,29 @@ namespace OOP2GroupLab1.ProblemDomain
                     {
                         // Sets a random number to be indexed
                         int randAdd = random.Next(0, setType.appliances.Count);
-                        // Checks that the index isn't already going to be displayed
+                        // Checks that the index isn't already added
                         if (!randNums.Contains(randAdd))
                         {
                             randNums.Add(randAdd);
                         }  
                     }
 
+                    // Display information for (randAmound) of appliances
                     foreach (int num in randNums)
                     {
                         Console.WriteLine(setType.appliances[num].ToString());
                     }
                 }
+            
                 else if (choice == 5) // Save & Exit
                 {
-                    Console.WriteLine("Five");
+                    FileEditor fileEditor = new FileEditor();
+
+                    fileEditor.SaveText(setType.appliances);
+                    Console.WriteLine("File Saved. Goodbye.");
+                    Environment.Exit(0);
                 }
+            
                 else
                 {
                     Console.WriteLine("Input Invalid. Try Again\n");

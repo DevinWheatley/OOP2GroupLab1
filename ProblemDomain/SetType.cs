@@ -37,9 +37,9 @@ namespace OOP2GroupLab1.ProblemDomain
     // Set Appliance Type
     public void SetApplianceType()
         {
-            TextToList applianceList = new TextToList();
+            FileEditor applianceList = new FileEditor();
             
-            foreach (string[] appliance in applianceList.TextIterator())
+            foreach (string[] appliance in applianceList.LoadText())
             {
                 if (appliance[0].StartsWith("1"))
                 {

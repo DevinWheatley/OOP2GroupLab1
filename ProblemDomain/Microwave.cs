@@ -1,6 +1,7 @@
 ﻿using OOP2GroupLab1.ProblemDomain;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,9 +29,24 @@ namespace OOP2GroupLab1.ProblemDomain
         // ToString
         public override string ToString()
         {
-            return base.ToString() +
-                $"Capacity : {capacity}\n" +
-                $"Room Type : {roomType}\n";
+            if (this._roomType == 'W')
+            {
+                return base.ToString() +
+                    $"Capacity : {capacity}\n" +
+                    $"Room Type : Work Site\n";
+            }
+            else if (this._roomType == 'K')
+            {
+                return base.ToString() +
+                    $"Capacity : {capacity}\n" +
+                    $"Room Type : Kitchen\n";
+            }
+            else
+            {
+                return base.ToString() +
+                    $"Capacity : {capacity}\n" +
+                    $"Room Type : {roomType}\n";
+            }
         }
     }
 }
