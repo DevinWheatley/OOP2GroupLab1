@@ -40,24 +40,33 @@ namespace OOP2GroupLab1.ProblemDomain
                     int searchNumber = int.Parse(Console.ReadLine());
 
                     bool flag = false; // true if Item Number found
+                    
                     int index = 0;
                     foreach (Appliance appliance in setType.appliances)
                     {
                         // Check searchNumber against appliance Item Numbers
-                        if (searchNumber == setType.appliances[index].itemNumber)
+                        if (searchNumber == setType.appliances[index].itemNumber && setType.appliances[index].quantity > 0)
                         {
-                            Console.WriteLine($"Appliance \"{searchNumber}\" has been checked out.\n");
+                            Console.WriteLine($"\nAppliance \"{searchNumber}\" has been checked out.\n");
                             // Update quantity
                             setType.appliances[index].quantity--;
+                            flag = true;
+                        }
+                        else if (searchNumber == setType.appliances[index].itemNumber && setType.appliances[index].quantity <= 0)
+                        {
+                            Console.WriteLine("\nThe appliance is not available to be checked out.\n");
+                            flag = true;
                         }
                         index++;
                     }
-                    // if no matching Item Number found
-                    if (flag == false) { Console.WriteLine($"No item with matching Item Number.\n"); }
-                }
-                else if (choice == 2) // Find by brand
-                {
                     
+                    // if no matching Item Number found
+                    if (flag == false) 
+                    { Console.WriteLine($"\nNo appliances found with that item number.\n"); }
+                }
+                
+                /*else if (choice == 2) // Find by brand
+                {
                     // Define Brand to be searched for
                     Console.Write("Enter brand to search for : ");
                     string searchBrand = Console.ReadLine();
@@ -77,7 +86,7 @@ namespace OOP2GroupLab1.ProblemDomain
                     {
                         Console.WriteLine($"No {searchBrand} appliances found.");
                     }
-                }
+                }*/
               
                 else if (choice == 3) // Find by type
                 {
@@ -124,16 +133,43 @@ namespace OOP2GroupLab1.ProblemDomain
                         Console.WriteLine("Invalid type selected.");
                     }
                 }
-
-                }
+            
                 else if (choice == 4) // Random
                 {
-                    Console.WriteLine("Four");
+                    // List containing indexs of chosen appliances in appliances list
+                    List<int> randNums = new List<int>();
+
+                    // Instantiate the built in Random class
+                    Random random = new Random();
+
+                    // Define amount of appliances to be shown
+                    Console.Write("Enter number of appliances : ");
+                    int randAmount = int.Parse(Console.ReadLine());
+                    Console.Write("\nRandom Appliances :");
+
+                    while (randNums.Count < randAmount)
+                    {
+                        // Sets a random number to be indexed
+                        int randAdd = random.Next(0, setType.appliances.Count);
+                        // Checks that the index isn't already added
+                        if (!randNums.Contains(randAdd))
+                        {
+                            randNums.Add(randAdd);
+                        }  
+                    }
+
+                    // Display information for (randAmound) of appliances
+                    foreach (int num in randNums)
+                    {
+                        Console.WriteLine(setType.appliances[num].ToString());
+                    }
                 }
+            
                 else if (choice == 5) // Save & Exit
                 {
                     Console.WriteLine("Five");
                 }
+            
                 else
                 {
                     Console.WriteLine("Input Invalid. Try Again\n");
