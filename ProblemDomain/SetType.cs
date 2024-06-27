@@ -16,7 +16,7 @@ namespace OOP2GroupLab1.ProblemDomain
         private List<Dishwasher> _dishwashers;
         private List<Microwave> _microwaves;
         public List<Appliance> appliances { get { return _appliances; } }
-        
+
         public List<Refrigerator> refrigerators { get { return _refrigerators; } }
         public List<Vacuum> vacuums { get { return _vacuums; } }
         public List<Dishwasher> dishwashers { get { return _dishwashers; } }
@@ -32,14 +32,14 @@ namespace OOP2GroupLab1.ProblemDomain
             _microwaves = new List<Microwave>();
         }
 
-    // Methods
+        // Methods
 
-    // Set Appliance Type
-    public void SetApplianceType()
+        // Set Appliance Type
+        public void SetApplianceType()
         {
-            TextToList applianceList = new TextToList();
-            
-            foreach (string[] appliance in applianceList.TextIterator())
+            FileEditor applianceList = new FileEditor();
+
+            foreach (string[] appliance in applianceList.LoadText())
             {
                 if (appliance[0].StartsWith("1"))
                 {
@@ -47,7 +47,7 @@ namespace OOP2GroupLab1.ProblemDomain
                     refrigerators.Add(refrigerator);
                     appliances.Add(refrigerator);
                 }
-                else if(appliance[0].StartsWith("2"))
+                else if (appliance[0].StartsWith("2"))
                 {
                     Vacuum vacuum = new Vacuum(int.Parse(appliance[0]), appliance[1], int.Parse(appliance[2]), int.Parse(appliance[3]), appliance[4], float.Parse(appliance[5]), appliance[6], int.Parse(appliance[7]));
                     vacuums.Add(vacuum);
@@ -68,6 +68,6 @@ namespace OOP2GroupLab1.ProblemDomain
             }
 
         }
-        
+
     }
 }

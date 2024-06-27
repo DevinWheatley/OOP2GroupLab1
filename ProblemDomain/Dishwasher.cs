@@ -28,9 +28,36 @@ namespace OOP2GroupLab1.ProblemDomain
         // ToString
         public override string ToString()
         {
-            return base.ToString() +
-                $"Features : {feature}\n" +
-                $"Sound Rating : {soundRating}\n";
+            if (this._soundRating == "Qt")
+            {
+                return base.ToString() +
+                    $"Features : {feature}\n" +
+                    $"Sound Rating : Quietest\n";
+            }
+            else if (this._soundRating == "Qr")
+            {
+                return base.ToString() +
+                    $"Features : {feature}\n" +
+                    $"Sound Rating : Quieter\n";
+            }
+            else if (this._soundRating == "Qu")
+            {
+                return base.ToString() +
+                    $"Features : {feature}\n" +
+                    $"Sound Rating : Quiet\n";
+            }
+            else if (this._soundRating == "M")
+            {
+                return base.ToString() +
+                    $"Features : {feature}\n" +
+                    $"Sound Rating : Moderate\n";
+            }
+            else
+            {
+                return base.ToString() +
+                    $"Features : {feature}\n" +
+                    $"Sound Rating : {soundRating}\n";
+            }
         }
     }
 }
